@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(16, 117, 124);
+    background-image: url("img/olas.jpg");
+    background-size: 100%;
     margin: 0;
     min-height: 1000px;
     line-height: 1;
@@ -27,18 +28,6 @@ header {
     display: block;
 }
 
-.page--home {
-    font-family: Verdana, arial, sans-serif;
-    font-size: 14px;
-    color: #1a1a1a;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    white-space: normal;
-    max-width: 100%;
-}
-
 .banner-rebajas {
     min-height: 450px;
     display: flex;
@@ -61,6 +50,7 @@ header {
     border-radius: 20px;
     text-align: center;
     margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .nav .menu_principal {
@@ -76,11 +66,13 @@ header {
 
 .nav .menu_principal>li>a {
     font-size: 15px;
-    font-size: sans-serif;
+    font-size: Verdana, Arial, helvetica, sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
 }
+
+.nav .menu_principal>li .desplegable {}
 
 .nav .menu_principal>li>.sub_menu>li:hover {
     background: rgba(211, 175, 15, 0.863);
@@ -100,6 +92,9 @@ header {
 .nav .menu_principal>li:hover>.sub_menu {
     display: block;
     z-index: 9;
+    text-align: left;
+    padding-top: 20px;
+    text-indent: 20px;
 }
 
 .nav .menu_principal>li>.sub_menu>li {
@@ -107,17 +102,27 @@ header {
 }
 
 .nav .menu_main>li>.sub_menu>li>a {
-    text-decoration: none;
     font-size: 12px;
     font-family: Verdana, Arial, helvetica, sans-serif;
-    ;
     font-weight: white;
 }
 
-.home-destacados {
-    width: 100%;
+.page--home {
+    min-height: 450px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    box-sizing: border-box;
+    width: 100%;
 }
+
+.home--destacados {}
+
 .caja_productos {
     margin: 15px 21px 15px 0;
     padding: 0;
@@ -167,6 +172,7 @@ header {
     margin-left: 25px;
     margin-top: 25px;
 }
+
 .caja_info_producto>a>img {
     border: 0;
 }
@@ -203,14 +209,18 @@ header {
 }
 
 .precio_oferta {
-    color: yellowgreen;
-    font-size: 12px;
+    color: rgb(240, 12, 12);
+    font-size: 16px;
     line-height: 16px;
 }
 
 .precio_anterior {
     color: white;
     text-decoration: line-through;
+}
+
+footer {
+    display: block;
 }
 
 footer .footer {
@@ -229,10 +239,6 @@ footer .footer {
     font-weight: 300;
 }
 
-#pie * {
-    box-sizing: border-box;
-}
-
 #pie .container {
     margin-right: auto;
     margin-left: auto;
@@ -240,4 +246,35 @@ footer .footer {
     padding-left: 85px;
     width: 100%;
     max-width: 1135px;
+}
+
+.boxMenuPie {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+    width: 50%;
+}
+
+.boxMenuPie .columna {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+}
+
+.boxMenuPie .columna>ul>li {
+    display: list-item;
+    text-align: center;
+}
+
+.boxMenuPie .columna>ul>li>a {
+    color: #efefef;
+    text-decoration: none;
+    font-size: 12px;
+    font-stretch: condensed;
+    font-family: Verdana, Arial, Helvetica;
+    font-weight: 300;
+    padding: 10px 5px;
+    display: block;
+    background-color: black;
 }
