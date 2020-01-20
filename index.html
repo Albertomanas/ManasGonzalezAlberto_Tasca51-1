@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,66 +11,64 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="contenedor">
         <header>
             <div id="logo">
                 <a href="index.html">
                     <img src="img/logo_transparente.png" width="120" height="120">
                 </a>
             </div>
+            <nav class="nav">
+                <ul class="menu_principal">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Skate </a>
+                        <!--Submenú desplegable dentro del menú desplegable llamado "menu_principal"-->
+                        <ul class="sub_menu">
+                            <li><a href="">Ruedas</a></li>
+                            <li><a href="">Tablas</a></li>
+                            <li><a href="">Rodamientos</a></li>
+                            <li><a href="">Ejes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Long</a>
+                        <ul class="sub_menu">
+                            <li><a href="">Ruedas</a></li>
+                            <li><a href="">Tablas</a></li>
+                            <li><a href="">Rodamientos</a></li>
+                            <li><a href="">Ejes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Surf</a>
+                        <ul class="sub_menu">
+                            <li><a href="">Ropa</a></li>
+                            <li><a href="">Tablas</a></li>
+                            <li><a href="">Ceras</a></li>
+                            <li><a href="">Neoprenos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ropa</a>
+                        <ul class="sub_menu">
+                            <li><a href="">Zapatos</a></li>
+                            <li><a href="">Pantalones</a></li>
+                            <li><a href="">Camisetas</a></li>
+                            <li><a href="">Sudaderas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Buscar</a></li>
+                </ul>
+            </nav>
         </header>
-        <!--Hacer menú desplegable-->
-        <nav class="nav">
-            <ul class="menu_principal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Skate </a>
-                    <!--Submenú desplegable dentro del menú desplegable llamado "menu_principal"-->
-                    <ul class="sub_menu">
-                        <li><a href="">Ruedas</a></li>
-                        <li><a href="">Tablas</a></li>
-                        <li><a href="">Rodamientos</a></li>
-                        <li><a href="">Ejes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Long</a>
-                    <ul class="sub_menu">
-                        <li><a href="">Ruedas</a></li>
-                        <li><a href="">Tablas</a></li>
-                        <li><a href="">Rodamientos</a></li>
-                        <li><a href="">Ejes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Surf</a>
-                    <ul class="sub_menu">
-                        <li><a href="">Ropa</a></li>
-                        <li><a href="">Tablas</a></li>
-                        <li><a href="">Ceras</a></li>
-                        <li><a href="">Neoprenos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Ropa</a>
-                    <ul class="sub_menu">
-                        <li><a href="">Zapatos</a></li>
-                        <li><a href="">Pantalones</a></li>
-                        <li><a href="">Camisetas</a></li>
-                        <li><a href="">Sudaderas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Buscar</a></li>
-            </ul>
-        </nav>
-        <div id="lista_productos">
-            <div class="caja_productos">
-                <div class="caja_color" style="width: 0px;"></div>
-                <div class="caja_info_producto">
-
-                    <article class="caja_info">
+        <div class="page--home">
+                <div class="banner-rebajas"><img src="img/rebajas.jpg" alt="rebajas"></div>
+            <div class="home-destacados">
+                <div class="caja_productos">
+                    <div class="caja_info_producto">
                         <a href="">
                             <img class="" src="img/skate1_santacruz.jpg" height="225" width="225" borde="0"
                                 title="Skate Santa Cruz" alt="Skate Santa Cruz">
                         </a>
                         <br>
-                        <span class="descuento">30%</span>
+                        <span class="descuento">-30%</span>
                         <span class="texto_imagen">Unidades disponibles </span>
                         <br>
                         <div class="caja_nombre_producto">
@@ -78,14 +76,58 @@
                         </div>
                         <span class="precio_oferta"><b>49.00 €</b></span>
                         <span class="precio_anterior"> &nbsp;70.00 €</span>
-                    </article>
+                    </div>
+                    <div class="caja_info_producto1">
+                        <a href="">
+                            <img class="" src="img/skate1_santacruz.jpg" height="225" width="225" borde="0"
+                                title="Skate Santa Cruz" alt="Skate Santa Cruz">
+                        </a>
+                        <br>
+                        <span class="descuento">-30%</span>
+                        <span class="texto_imagen">Unidades disponibles </span>
+                        <br>
+                        <div class="caja_nombre_producto">
+                            Skate <b>Santa Cruz</b>
+                        </div>
+                        <span class="precio_oferta"><b>49.00 €</b></span>
+                        <span class="precio_anterior"> &nbsp;70.00 €</span>
+                    </div>
+                    <div class="caja_info_producto2">
+                        <a href="">
+                            <img class="" src="img/skate1_santacruz.jpg" height="225" width="225" borde="0"
+                                title="Skate Santa Cruz" alt="Skate Santa Cruz">
+                        </a>
+                        <br>
+                        <span class="descuento">-30%</span>
+                        <span class="texto_imagen">Unidades disponibles </span>
+                        <br>
+                        <div class="caja_nombre_producto">
+                            Skate <b>Santa Cruz</b>
+                        </div>
+                        <span class="precio_oferta"><b>49.00 €</b></span>
+                        <span class="precio_anterior"> &nbsp;70.00 €</span>
+                    </div>
+                    <div class="caja_info_producto3">
+                        <a href="">
+                            <img class="" src="img/skate1_santacruz.jpg" height="225" width="225" borde="0"
+                                title="Skate Santa Cruz" alt="Skate Santa Cruz">
+                        </a>
+                        <br>
+                        <span class="descuento">-30%</span>
+                        <span class="texto_imagen">Unidades disponibles </span>
+                        <br>
+                        <div class="caja_nombre_producto">
+                            Skate <b>Santa Cruz</b>
+                        </div>
+                        <span class="precio_oferta"><b>49.00 €</b></span>
+                        <span class="precio_anterior"> &nbsp;70.00 €</span>
+                    </div>
                 </div>
             </div>
-        </div class="caja_color" style="width: 0px;">
-        <div class="footer">
-            <h6>Copyright &copy; 2019 StoreOnWheels All Rights Reserved</h6>
         </div>
+        <footer>&copy;</footer>
     </div>
+    <!--div contenedor-->
 </body>
 
 </html>
