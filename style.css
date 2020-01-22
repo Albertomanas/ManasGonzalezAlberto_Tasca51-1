@@ -1,6 +1,6 @@
 body {
     background-image: url("img/olas.jpg");
-    background-size: 100%;
+    background-size: cover;
     margin: 0;
     min-height: 1000px;
     line-height: 1;
@@ -38,7 +38,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    background-color: cadetblue;
+    background-color: rgb(16, 123, 150);
     box-sizing: border-box;
     width: 100%;
 }
@@ -72,10 +72,13 @@ header {
     text-decoration: none;
 }
 
-.nav .menu_principal>li .desplegable {}
+.nav .menu_principal>li>:hover {
+    background: rgba(6, 147, 190, 0.863);
+    cursor: pointer;
+}
 
 .nav .menu_principal>li>.sub_menu>li:hover {
-    background: rgba(211, 175, 15, 0.863);
+    background: rgba(6, 147, 190, 0.863);
     cursor: pointer;
 }
 
@@ -83,6 +86,8 @@ header {
     position: absolute;
     background: cadetblue;
     width: 16%;
+    text-decoration: none;
+    font-weight: bold;
     list-style: none;
     display: none;
     border-bottom-left-radius: 20px;
@@ -105,6 +110,19 @@ header {
     font-size: 12px;
     font-family: Verdana, Arial, helvetica, sans-serif;
     font-weight: white;
+    text-decoration: none;
+}
+
+.desplegable>ul {
+    display: none;
+}
+
+#Filtro:checked~#desplegable2 {
+    display: block;
+}
+
+#desplegable2 {
+    display: none;
 }
 
 .page--home {
@@ -120,8 +138,6 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
-
-.home--destacados {}
 
 .caja_productos {
     margin: 15px 21px 15px 0;
@@ -215,66 +231,40 @@ header {
 }
 
 .precio_anterior {
-    color: white;
+    color: black;
     text-decoration: line-through;
 }
 
 footer {
-    display: block;
-}
-
-footer .footer {
-    padding: 20px 0;
-    box-sizing: border-box;
-}
-
-#pie {
-    background-color: white;
-    border-top: none;
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-stretch: condensed;
-    font-family: Verdana, arial, helvetica;
-    font-weight: 300;
-}
-
-#pie .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 85px;
-    padding-left: 85px;
-    width: 100%;
-    max-width: 1135px;
-}
-
-.boxMenuPie {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    float: left;
-    width: 50%;
-}
-
-.boxMenuPie .columna {
-    width: 50%;
-    float: left;
-    padding: 0 10px;
-}
-
-.boxMenuPie .columna>ul>li {
-    display: list-item;
-    text-align: center;
-}
-
-.boxMenuPie .columna>ul>li>a {
-    color: #efefef;
-    text-decoration: none;
-    font-size: 12px;
-    font-stretch: condensed;
-    font-family: Verdana, Arial, Helvetica;
-    font-weight: 300;
-    padding: 10px 5px;
-    display: block;
     background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer>ul {
+    list-style: none;
+}
+
+footer>ul>li {
+    display: inline-block;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer>ul>li>a>h4 {
+    margin-bottom: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+footer>ul>li>a>h4:hover {
+    background: rgba(6, 147, 190, 0.863);
+    cursor: pointer;
+}
+
+footer>h6 {
+    color: white;
 }

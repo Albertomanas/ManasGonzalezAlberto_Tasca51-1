@@ -54,18 +54,40 @@
                             <li><a href="">Sudaderas</a></li>
                         </ul>
                     </li>
-                    <li class="desplegable"><a href="#">Filtro</a></li>
+                    <li class="desplegable">
+                        <input type="checkbox" id="Filtro">Filtro</input>
+                        <label for="Filtro" id="label1"></label>
+                        <div id="desplegable2">
+                            <ul>
+                                <input id="Filtro" type="text" name="busqueda" placeholder="Buscar">
+                                <input type="submit" value="Filtro"><br>
+                                <h4>Precio mínimo:</h4><br>
+                                <input type="text" placeholder="Mínimo de 5 €"><br>
+                                <h4>Precio máximo:</h4><br>
+                                <input type="text" placeholder="Máximo 1500 €"><br>
+                                <select>
+                                    <option value="0">Seleccione:</option>
+                                    <option value="1">Skate</option>
+                                    <option value="2">Long</option>
+                                    <option value="3">Surf</option>
+                                    <option value="4">Ropa</option>
+                                </select><br>
+                                <h5><label for=""><input type="checkbox" id="stock">En stock</label></h5>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
         <div class="page--home">
-                <div class="banner-rebajas"><img src="img/rebajas.jpg" alt="rebajas"></div>
+            <div class="banner-rebajas">
+                <img src="img/rebajas.jpg" alt="rebajas">
+            </div>
             <div>
                 <div class="caja_productos">
                     <div class="caja_info_producto">
                         <a href="">
-                            <img src="img/skate1_santacruz.jpg" height="225" width="225" borde="0"
-                                title="Skate Santa Cruz" alt="Skate Santa Cruz">
+                            <img src="img/skate1_santacruz.jpg" height="225" width="225" borde="0" title="Skate Santa Cruz" alt="Skate Santa Cruz">
                         </a>
                         <br>
                         <span class="descuento">-30%</span>
@@ -79,8 +101,7 @@
                     </div>
                     <div class="caja_info_producto1">
                         <a href="">
-                            <img class="" src="img/long1_santacruz.jpg" height="225" width="225" borde="0"
-                                title="Long Santa Cruz" alt="Long Santa Cruz">
+                            <img class="" src="img/long1_santacruz.jpg" height="225" width="225" borde="0" title="Long Santa Cruz" alt="Long Santa Cruz">
                         </a>
                         <br>
                         <span class="descuento">-35%</span>
@@ -94,8 +115,7 @@
                     </div>
                     <div class="caja_info_producto2">
                         <a href="">
-                            <img class="" src="img/surf1_ripcurl.jpg" height="225" width="225" borde="0"
-                                title="Tabla surf ripcurl" alt="Tabla surf ripcurl">
+                            <img class="" src="img/surf1_ripcurl.jpg" height="225" width="225" borde="0" title="Tabla surf ripcurl" alt="Tabla surf ripcurl">
                         </a>
                         <br>
                         <span class="descuento">-50%</span>
@@ -109,8 +129,7 @@
                     </div>
                     <div class="caja_info_producto3">
                         <a href="">
-                            <img class="" src="img/ropa1_carhartt.jpg" height="225" width="225" borde="0"
-                                title="Chaqueta Carhartt" alt="Chaqueta Carhartt">
+                            <img class="" src="img/ropa1_carhartt.jpg" height="225" width="225" borde="0" title="Chaqueta Carhartt" alt="Chaqueta Carhartt">
                         </a>
                         <br>
                         <span class="descuento">-40%</span>
@@ -125,28 +144,30 @@
                 </div>
             </div>
         </div>
-        <footer class="footer" id="pie">
-            <div class="container">
-                <div class="boxMenuPie">
-                    <div class="columna">
-                        <ul>
-                            <li>
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Skate</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Long</a>
-                            </li>
-                            <li>
-                                <a href="index.html">surf</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="copyright"> &copy; 2019-2020 StoreOnWheels</div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <h4>Inicio</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <h4>Skate</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <h4>Long</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <h4>Surf</h4>
+                    </a>
+                </li>
+            </ul>
+            <h6> &copy; 2019-2020 StoreOnWheels</h6>
         </footer>
     </div>
     <!--div contenedor-->
