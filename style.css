@@ -1,3 +1,10 @@
+/*  Autor: Alberto J. Mañas González
+    Asignatura: Lenguaje de marcas
+    Trabajo: 5.1 CSS*/
+
+
+/*Estilo cuerpo de la página por default */
+
 body {
     background-image: url("img/olas.jpg");
     background-size: cover;
@@ -12,6 +19,9 @@ body {
 div {
     display: block;
 }
+
+
+/*Contenedor con  */
 
 #contenedor {
     margin: 0 auto;
@@ -28,6 +38,9 @@ header {
     display: block;
 }
 
+
+/*Caja frontal de rebajas*/
+
 .banner-rebajas {
     min-height: 450px;
     display: flex;
@@ -43,6 +56,9 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+
+
+/*MENÚ DESPLEGABLE*/
 
 .nav {
     background: cadetblue;
@@ -73,10 +89,16 @@ header {
     text-decoration: none;
 }
 
+
+/*Cambio de color al pasar el ratón por encima*/
+
 .nav .menu_principal>li>:hover {
     background: rgba(6, 147, 190, 0.863);
     cursor: pointer;
 }
+
+
+/* Menú desplegable dentro del menu_principal*/
 
 .nav .menu_principal>li>.sub_menu>li:hover {
     background: rgba(6, 147, 190, 0.863);
@@ -109,9 +131,15 @@ header {
     font-weight: white;
 }
 
+
+/*Casilla filtro desplegable*/
+
 .desplegable>ul {
     display: none;
 }
+
+
+/*Casilla filtro donde se desplegará con un checked dicho filtro*/
 
 #Filtro:checked~#desplegable2 {
     display: block;
@@ -126,6 +154,9 @@ header {
     display: none;
 }
 
+
+/*Características de page-home la cual contendrá todo nuestro contenido modificable*/
+
 .page--home {
     min-height: 450px;
     display: flex;
@@ -139,6 +170,9 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+
+
+/*Caja de productos en ella habrán cajas con los productos destacados*/
 
 .caja_productos {
     margin: 15px 21px 15px 0;
@@ -158,6 +192,9 @@ header {
     top: 0;
 }
 
+
+/*caja del primer objeto destacado*/
+
 .caja_info_producto {
     font-size: 11px;
     line-height: 13px;
@@ -165,6 +202,9 @@ header {
     margin-left: 25px;
     margin-top: 25px;
 }
+
+
+/*caja del segundo objeto destacado*/
 
 .caja_info_producto1 {
     font-size: 11px;
@@ -174,6 +214,9 @@ header {
     margin-top: 25px;
 }
 
+
+/*caja del tercer objeto destacado*/
+
 .caja_info_producto2 {
     font-size: 11px;
     line-height: 13px;
@@ -181,6 +224,9 @@ header {
     margin-left: 25px;
     margin-top: 25px;
 }
+
+
+/*caja del cuarto objeto destacado*/
 
 .caja_info_producto3 {
     font-size: 11px;
@@ -193,6 +239,9 @@ header {
 .caja_info_producto>a>img {
     border: 0;
 }
+
+
+/*Etiqueta descuento situada arriba a la derecha de cada imagen del producto*/
 
 .descuento {
     margin: -225px 0 199px 180px;
@@ -210,12 +259,18 @@ header {
     z-index: 2;
 }
 
+
+/*Texto bajo la imagen, escribiendo el "título" del contenido de la subcaja*/
+
 .texto_imagen {
     font-size: 10px;
     font-family: Verdana, Arial, helvetica, sans-serif;
     color: white;
     ;
 }
+
+
+/*Nombre del producto que se le aplica la promoción*/
 
 .caja_nombre_producto {
     font-size: 15px;
@@ -225,16 +280,25 @@ header {
     color: white;
 }
 
+
+/*Precio de la oferta de la caja de producto destacado*/
+
 .precio_oferta {
     color: rgb(240, 12, 12);
     font-size: 16px;
     line-height: 16px;
 }
 
+
+/*Precio anterior tachado del producto destacado*/
+
 .precio_anterior {
     color: black;
     text-decoration: line-through;
 }
+
+
+/*PIE DE PÁGINA CON COPYRIGHT Y UN MENÚ */
 
 footer {
     background-color: black;
@@ -270,6 +334,9 @@ footer>h6 {
     color: white;
 }
 
+
+/*ESTRELLAS DE CALIFICACIÓN DEL PRODUCTO*/
+
 #form {
     width: 250px;
     margin: 0 auto;
@@ -297,13 +364,16 @@ input[type="radio"] {
     unicode-bidi: bidi-override;
 }
 
-label:hover, label:hover~label {
+label:hover~label {
     color: orange;
 }
 
 input[type="radio"]:checked~label {
     color: orange;
 }
+
+
+/*Caja de producto de producte.html en la que contendrá un producto con su imagen y explicación*/
 
 .caja_producto_explicacion {
     background-color: rgb(54, 116, 121);
@@ -323,6 +393,9 @@ input[type="radio"]:checked~label {
     border-radius: 10%;
 }
 
+
+/*Titulo del producto*/
+
 .caja_producto_explicacion>h2 {
     color: white;
     font-size: 40px;
@@ -333,6 +406,9 @@ input[type="radio"]:checked~label {
     font-family: 'Interstate Bold Condensed', Arial, sans-serif;
     width: 15%;
 }
+
+
+/*Descuento producto*/
 
 .descuento2 {
     margin: -253px 0 240px 210px;
@@ -354,6 +430,9 @@ input[type="radio"]:checked~label {
     text-decoration: line-through;
 }
 
+
+/*columna donde está la imagen junto con precio y calificación*/
+
 .columna_objeto1 {
     font-size: 11px;
     line-height: 13px;
@@ -362,6 +441,9 @@ input[type="radio"]:checked~label {
     margin-top: 40px;
     width: 40%;
 }
+
+
+/*Texto de los cuadros de product de producte.html*/
 
 .texto_objeto1 {
     font-size: 15px;

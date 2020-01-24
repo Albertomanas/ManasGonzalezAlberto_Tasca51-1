@@ -1,3 +1,5 @@
+<!--Autor: Alberto J. Mañas González
+    Asignatura: Lenguaje de marcas, trabajo 5.1 (CSS)-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,13 +14,16 @@
 
 <body>
     <div id="contenedor">
+        <!--Contenedor de toda la pagina-->
         <header>
+            <!--header de la pagina con logo y menú desplegable-->
             <div id="logo">
                 <a href="index.html">
                     <img src="img/logo_transparente1.png" width="120" height="120">
                 </a>
             </div>
             <nav class="nav">
+                <!--Menú desplegable-->
                 <ul class="menu_principal">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="producte.html#skate">Skate </a>
@@ -58,54 +63,68 @@
                             &zwnj;
                         </ul>
                     </li>
+                    <!--Filtro desplegable con categoría del producto y casilla stock-->
                     <li class="desplegable">
-                        <input type="checkbox" id="Filtro" />
-                        <label for="Filtro" id="label1">Filtro</label>
-                        <div id="desplegable2">
-                            <ul>
-                                <input id="Filtro" type="text" name="busqueda" placeholder="Buscar">
-                                <input type="submit" value="Buscar">
-                                <h4>Precio mínimo:</h4>
-                                <input type="number" placeholder="5" min="5" max="1500">
-                                <h4>Precio máximo:</h4>
-                                <input type="number" placeholder="1500" min="5" max="1500">
-                                <br>
-                                <br>
-                                <select>
+                        <form action="index.html">
+                            <input type="checkbox" id="Filtro" />
+                            <label for="Filtro" id="label1">Filtro</label>
+                            <div id="desplegable2">
+                                <ul>
+                                    <input id="Filtro" type="text" name="busqueda" placeholder="Buscar">
+                                    <input type="submit" value="Buscar">
+                                    <h4>Precio mínimo:</h4>
+                                    <input type="number" placeholder="5" min="5" max="1500">
+                                    <h4>Precio máximo:</h4>
+                                    <input type="number" placeholder="1500" min="5" max="1500">
+                                    <br>
+                                    <br>
+                                    <select>
+                                    <!--Categorías dentro del filtro-->
                                     <option value="0">Seleccione:</option>
                                     <option value="1">Skate</option>
                                     <option value="2">Long</option>
                                     <option value="3">Surf</option>
                                     <option value="4">Ropa</option>
                                 </select>
-                                <h5><label for=""><input type="checkbox" id="stock">En stock</label></h5>
-                                <br>
-                            </ul>
-                        </div>
+                                    <h5><label for=""><input type="checkbox" id="stock">En stock</label></h5>
+                                    <br>
+                                </ul>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </nav>
         </header>
+        <!--Page home de la página a partir del header-->
         <div class="page--home">
+            <!--Banner de rebajas, mostrará la imagen de rebajas-->
             <div class="banner-rebajas">
                 <img src="img/rebajas.jpg" alt="rebajas">
             </div>
             <div>
+                <!--Caja que contiene los productos destacados-->
                 <div class="caja_productos">
+                    <!--Caja donde estará el primer producto-->
                     <div class="caja_info_producto">
                         <a href="producte.html#skate">
                             <img src="img/skate1_santacruz.jpg" height="225" width="225" borde="0" title="Skate Santa Cruz" alt="Skate Santa Cruz">
                         </a>
                         <br>
+                        <!--Descuento situado arriba a la derecha de la imagen-->
                         <span class="descuento">-30%</span>
+                        <!--Primera caja situada bajo la imagen-->
                         <span class="texto_imagen">Promoción! </span>
                         <br>
+                        <!--Nombre del producto destacado-->
                         <div class="caja_nombre_producto">
                             Skate <b>Santa Cruz</b>
                         </div>
+                        <!--Precio actual tras aplicar el descuento-->
                         <span class="precio_oferta"><b>49.00 €</b></span>
+                        <!--Precio tachado representando que era el anterior-->
                         <span class="precio_anterior"> &nbsp;70.00 €</span>
                         <span>
+                            <!--Estrellas de calificación bajo la imagen-->
                             <form>
                                 <p class="clasificacion">
                                     <input id="radio1" type="radio" name="estrellas" value="5">
@@ -122,6 +141,7 @@
                             </form>
                         </span>
                     </div>
+                    <!--Caja de producto en segunda posición-->
                     <div class="caja_info_producto1">
                         <a href="producte.html#long">
                             <img class="" src="img/long1_santacruz.jpg" height="225" width="225" borde="0" title="Long Santa Cruz" alt="Long Santa Cruz">
@@ -152,6 +172,7 @@
                             </form>
                         </span>
                     </div>
+                    <!--Caja producto en 3era posición-->
                     <div class="caja_info_producto2">
                         <a href="">
                             <img class="" src="img/surf1_ripcurl.jpg" height="225" width="225" borde="0" title="Tabla surf ripcurl" alt="Tabla surf ripcurl">
@@ -182,6 +203,7 @@
                             </form>
                         </span>
                     </div>
+                    <!--Caja de producto que está en cuarta posición-->
                     <div class="caja_info_producto3">
                         <a href="">
                             <img class="" src="img/ropa1_carhartt.jpg" height="225" width="225" borde="0" title="Chaqueta Carhartt" alt="Chaqueta Carhartt">
@@ -215,6 +237,7 @@
                 </div>
             </div>
         </div>
+        <!--Pie de página con menú y copyright-->
         <footer>
             <ul>
                 <li>
